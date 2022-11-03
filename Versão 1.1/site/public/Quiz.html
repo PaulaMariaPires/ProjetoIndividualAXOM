@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Quiz.css">
+    
+        <title>AXOM | Login</title>
+    
+        <script src="./js/funcoes.js"></script>
+    
+        <link rel="icon" href="./css/Imagens/logo.png">
+</head>
+
+<body>
+
+    <!-- Header com logo e menu -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href=Quiz.html>Quiz</a></li>
+                    <li>|</li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <img src="Imagens/logo.png" alt="">
+                <p>AXOM</p>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do Header -->
+
+    <div class="cabecalho">
+        <div class="conteiner">
+
+            <div class="titulo">
+
+                <h1>Quiz: Descubra aqui qual é a constelação</h1>
+
+                <h3> Quiz: Vamos ver se você faz mesmo parte da frota-estelar, responda esse quiz de X perguntas
+                    sobre
+                    constelações e de acordo com o seu acerto você receberá um feedback sobre seu conhecimento!
+                </h3>
+
+            </div>
+
+            <div id="conteiner">
+                <div class="questionario">
+                    <h1>Dado a constelação abaixo, informe o nome dela</h1>
+                    <div class="questao">
+
+                        <div class="imagem">
+                            <img src="Imagens/orion.jpg" alt="constelação">
+                        </div>
+                    </div>
+
+                </div>
+
+                <select id="orion">
+                    <option value="orion">Orion</option>
+                    <option value="sirius">Sirius</option>
+                    <option value="tresm">Três Marias</option>
+                    <option value="ursame">Ursa Menor</option>
+                </select>
+
+                <button onclick="escolha()">Ver Resposta</button>
+            </div>
+
+            <div class="selecao2" style="display: none;">
+                <select id="rover">
+                    <option value="rover">Robô Rover</option>
+                    <option value="falcon">Falcon X</option>
+                    <option value="jupiter">Jupiter</option>
+                    <option value="hori">Horizon</option>
+                </select>
+
+                <button onclick="escolha()">Ver Resposta</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href=Quiz.html>Quiz</a></li>
+                    <li>|</li>
+                    <li><a href="Login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="logo">
+                <img src="Imagens/logo.png" alt="">
+                <p>AXOM</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <center>
+            <h2>AXOM.com.br<br>Desenvolvido por Paula Maria Pires | 1 ADS B 2/2022</h2>
+        </center>
+    </div>
+
+    <!-- Fim Footer -->
+</body>
+
+</html>
+
+<script>
+    function escolha() {
+
+        var selecao = orion.value;
+        var selecao2 = rover.value;
+        var pontos = 0;
+
+        if (selecao == 'orion') {
+            pontos += 30;
+            conteiner.style.display = "block";
+            conteiner.innerHTML = `        
+            <div class="questionario">
+                <h1>Qual o nome do robô na imagem abaixo?</h1>
+                    <div class="questao">
+                        <div class="imagem">
+                            <img src="Imagens/mars-g21336a0c6_1920.jpg" alt="constelação">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="selecao2" style="display: block;">
+            <select id="rover">
+                <option value="orinon">Robô Rover</option>
+                <option value="sirius">Falcon X</option>
+                <option value="tresm">Jupiter</option>
+                <option value="ursame">Horizon</option>
+            </select>
+
+            <button onclick="escolha()">Ver Resposta</button>
+        </div>
+    </div>`
+        } else if (selecao2 == rover) {
+            pontos += 30;
+            conteiner.style.display = "block";
+            conteiner.innerHTML = `        
+            <div class="questionario">
+                <h1>Qual o nome do robô na imagem abaixo?</h1>
+                    <div class="questao">
+                        <div class="imagem">
+                            <img src="Imagens/mars-g21336a0c6_1920.jpg" alt="constelação">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="selecao2" style="display: block;">
+            <select id="rover">
+                <option value="orinon">Robô Rover</option>
+                <option value="sirius">Falcon X</option>
+                <option value="tresm">Jupiter</option>
+                <option value="ursame">Horizon</option>
+            </select>
+
+            <button onclick="escolha()">Ver Resposta</button>
+        </div>
+    </div>`
+        }
+
+
+    }
+</script>

@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: grey;
+    background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* header com logo e menu */
+
+.navbar {
+  display: flex;
+  float: right;
+  width: 600px;
+  /* border: 1px solid red; */
+  width: 50%;
+  margin-left: 50%;
+}
+
+.header .navbar li {
+  justify-content: space-around;
+  color: white;
+  display: flex;
+  float: left;
+  padding-left: 50px;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p{
+  text-align: center;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.671);
+  justify-content: space-around;
+  /* border: solid 1px yellow; */
+  width: 100%;
+  margin: auto;
+  height: 50px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header .logo img {
+  position: absolute;
+  left: 50px;
+  top: 4px;
+  /* border: solid 1px red; */
+  width: 40px;
+  height: 40px;
+}
+
+.header p {
+  position: absolute;
+  left: 100px;
+  font-size: 12pt;
+  font-weight: 700;
+  color: white;
+}
+
+/* Fim do Header */
+
+
+.caixa_formulario{
+    background-color: lightslategray;
+    margin-top: 20px;
+    width: 400px;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.caixa_formulario h1{
+    font-size: 30px;
+}
+
+.caixa_formulario h3{
+    color: white;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.formulario button{
+margin-top: 10px;
+background: rgb(82, 143, 196);
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+width: 100px;
+align-self: center;
+}
+
+.formulario input{
+    padding: 10px 15px;
+    text-align: center;
+    border: 2px solid rgb(82, 143, 196);
+    border-radius: 10px;
+}
+
+.formulario span{
+    font-size: 20px;
+}
+
+.banner{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+}
+
+banner .container .card {
+    background-color: #e5e5e5;
+    height: fit-content;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    color: palevioletred;
+    align-items: center;
+    border-radius: 4px;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card h2 {
+    font-size: 30px;
+  }
+  
+  .card h4 {
+    font-size: 16px;
+  }
+  
+  .banner #div_erros_login {
+    margin-top: 15px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* FORMULARIO */
+  
+  .alerta_erro{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    position: fixed;
+    border-radius: 4px;
+    border: #e6005a 3px solid;
+    padding: 10px;
+    margin-right: 10%;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
