@@ -51,7 +51,7 @@
             </div>
             <div class="perfil">
                 <center>
-                    <h4>Jualiana Silva</h4>
+                    <h4 id="nome_usuario"></h4>
                 </center>
             </div>
         </div>
@@ -145,13 +145,7 @@ function publicar() {
 
 }
 
-function editar(idAviso) {
-    sessionStorage.ID_POSTAGEM_EDITANDO = idAviso;
-    console.log("cliquei em editar - " + idAviso);
-    window.alert("Você será redirecionado à página de edição do aviso de id número: " + idAviso);
-    window.location = "/dashboard/edicao-aviso.html"
 
-}
 
 function deletar(idAviso) {
     console.log("Criar função de apagar post escolhido - ID" + idAviso);
@@ -164,7 +158,7 @@ function deletar(idAviso) {
 
         if (resposta.ok) {
             window.alert("Post deletado com sucesso pelo usuario de email: " + sessionStorage.getItem("EMAIL_USUARIO") + "!");
-            window.location = "/dashboard/mural.html"
+            window.location = "/PerfildoUsuario.html"
         } else if (resposta.status == 404) {
             window.alert("Deu 404!");
         } else {

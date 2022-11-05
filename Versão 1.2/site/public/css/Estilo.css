@@ -79,7 +79,7 @@ p{
     background-color: rgba(0, 0, 0, 0.301);
     /* border: 1px solid red; */
     padding: 40px 0;
-    height: 500px;
+    height: 550px;
 }
    
 .banner .conteiner {
@@ -158,19 +158,17 @@ p{
 
 
 .exploracoes{
-    
     height: 510px;
 }
 .exploracoes .conteiner{ 
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.493);
     /* border: 1px solid red; */
-    height: 550px;
+    height: 660px;
 }
 
 .exploracoes h1{
-    margin-top: 30px;
+    margin-top: 50px;
     margin-right: 100px;
     display: flex;
     float: right;
@@ -182,10 +180,10 @@ p{
     display: flex;
     float: right;
     /* border: 1px solid red; */
-    margin-top: 30px;
+    margin-top: 50px;
     margin-right: 60px;
     width: 90%;
-    height: 75%;
+    height: 50%;
 }
 
 .exploracoes .gagarin{
@@ -221,9 +219,10 @@ p{
 /* Fim banner missões */
 
 
-/* Conteiner Expliação sobre exploração espacial */
+/* Conteiner Explicação sobre exploração espacial */
 
 .explicacao{
+    margin-top: 150px;
     background-color: black;
     color: white;
     /* border: 1px red solid; */
@@ -244,7 +243,7 @@ flex-direction: column;
     color: white;
     /* border: 1px solid red; */
     padding: 40px 0;
-    height: 500px;
+    height: 550px;
 }
 
 .conclusao  h1{
