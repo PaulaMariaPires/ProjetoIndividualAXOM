@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(Imagens/milky-way-g29451a502_1920.jpg);
+}
+
+/* header com logo e menu */
+
+.navbar {
+    display: flex;
+    float: right;
+    /* border: 1px solid red; */
+    width: 85%;
+    margin-left: 55%;
+}
+
+.header .navbar li {
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    float: left;
+    padding-left: 50px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    text-align: center;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.671);
+    justify-content: space-around;
+    /* border: solid 1px yellow; */
+    width: 100%;
+    margin: auto;
+    height: 50px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header .logo img {
+    position: absolute;
+    left: 50px;
+    top: 4px;
+    /* border: solid 1px red; */
+    width: 40px;
+    height: 40px;
+}
+
+.header p {
+    position: absolute;
+    left: 100px;
+    font-size: 12pt;
+    font-weight: 700;
+    color: white;
+}
+
+/* Fim do Header */
+
+
+.usuario .conteiner{
+    background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 230px;
+    height: 950px;
+    color: white;
+}
+
+.foto{
+    background-image: url(Imagens/smiling-ge21deea24_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.bemvindo{
+    position: absolute;
+    top: 300px;
+}
+.perfil{
+    position: absolute;
+    top: 350px;
+}
+
+.banner {
+    position: absolute;
+    top: 50px;
+     /* border: 1px solid red;   */
+    margin-left: 220px;
+    height: 950px;
+    width: 83%;
+}
+
+.alinhamento h2{
+    -webkit-text-stroke: rgb(43, 47, 71) 1px;
+     color: white; 
+     margin-left: 10px;
+}
+
+.banner .conteiner{
+    display: flex;
+    background-color: rgb(36, 36, 70);
+    margin-top: 30px;
+    margin-left: 20px;
+     /* border: 1px solid red;   */
+    width: 98%;
+    height: 900px;
+    border-radius: 15px;
+}
+
+.assunto1{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto1 img{
+    width: 200px;
+    height: 250px;
+}
+
+
+.assunto2{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto2 img{
+    width: 200px;
+    height: 250px;
+}
+
+
+.assunto4{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto4 img{
+    width: 200px;
+    height: 250px;
+    
+} 
+
+.assunto5{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto5 img{
+    width: 200px;
+    height: 250px;
+}
+
+.assunto6{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto6 img{
+    width: 200px;
+    height: 250px;
+}
+
+.assunto7{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto7 img{
+    width: 200px;
+    height: 250px;
+}
+
+.assunto8{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto8 img{
+    width: 200px;
+    height: 250px;
+}
+
+.assunto9{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 35px;
+}
+
+.assunto9 img{
+    width: 200px;
+    height: 250px;
+}
+
+.assunto10{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+.assunto10 img{
+    width: 200px;
+    height: 250px;
+}
+
+/* Divisões */
+
+.emcima{ 
+    display: flex;
+    float: left;
+    margin-top: 20px; 
+    padding: 10px 10px 5px 10px;
+}
+
+
+
+.embaixo{
+    position: absolute;
+    top: 640px ;
+    display: flex;
+    float: right; 
+    padding: 10px 10px 10px 10px;
+}
+
+
+.meio{
+    position: absolute;
+    top: 350px ;
+    display: flex;
+    float: right; 
+    padding: 10px 10px 10px 10px;
+}
+
+
+.emcima .container {
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+
+
+  .meio .container {
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+
+  
+.embaixo .container {
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
