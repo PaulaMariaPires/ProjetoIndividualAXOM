@@ -12,10 +12,9 @@ body {
 .navbar {
     display: flex;
     float: right;
-    width: 600px;
     /* border: 1px solid red; */
-    width: 50%;
-    margin-left: 50%;
+    width: 85%;
+    margin-left: 55%;
 }
 
 .header .navbar li {
@@ -70,20 +69,70 @@ p{
 
 /* Fim do Header */
 
+.usuario .conteiner{
+    background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 230px;
+    height: 750px;
+    color: white;
+}
+
+.foto{
+    background-image: url(Imagens/smiling-ge21deea24_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.bemvindo{
+    position: absolute;
+    top: 300px;
+}
+.perfil{
+    position: absolute;
+    top: 350px;
+}
+
+.banner {
+    position: absolute;
+    top: 50px;
+    /* border: 1px solid red;  */
+    margin-left: 220px;
+    height: 750px;
+    width: 70%;
+}
+
+
+.banner .conteiner{
+    margin-left: 20px;
+    /* border: 1px solid red;  */
+    width: 98%;
+    height: 500px;
+    border-radius: 15px;
+}
+
 /* Começo cabeçalho */
 .cabecalho .conteiner{
+    position: absolute;
+    left: 170px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.301);
     /* border: 3px solid red; */
-    padding: 40px 0;
-    height: 900px;
+    padding: 5px 0;
+    height: 740px;
+    width: 80%;
 }
 
 .cabecalho .titulo{
     color: white;
     background-color: rgb(0, 0, 0);
     /* border: 3px solid red; */
-    padding: 40px 0;
+    padding: 10px 0;
     height: 100px;
     width: 100%;
 }
@@ -97,12 +146,13 @@ p{
 }
 
 .conteiner .questionario{
-    background-color: rgba(0, 0, 0, 0.301);
     flex-direction: column;
+    position: absolute;
+    right: 100px;
     display: flex;
     align-items: center;
     /* border: solid 1px red;    */
-    width: 100%;
+    width: 80%;
     height: 700px;
 }
 
@@ -112,8 +162,8 @@ p{
 }
 
 .questionario img{
-    width: 500px;
-    height:500px;
+    width: 400px;
+    height:400px;
 }
 
 .questao{
@@ -121,13 +171,67 @@ p{
     float: left;
 }
 
-
 .conteiner select{
+position: absolute;
+top: 650px;
+left: 340px;
 width: 100px;
 height: 30px;
 }
 
+.conteiner button{
+    position: absolute;
+    top: 700px;
+    left: 340px;
+    width: 100px;
+    height: 30px;
+    }
+    
 /* Fim Questionario */
+
+/* Modal para o gráfico */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; 
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 250px;
+    top: 100px;
+    width: 75%; /* Full width */
+    height: 75%; /* Full height */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 75%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #myBtn{
+    position: absolute;
+    bottom: 200px;
+    left: 65px;
+  }
+  /* Fim modal */
 
 /* Footer */
 .footer{

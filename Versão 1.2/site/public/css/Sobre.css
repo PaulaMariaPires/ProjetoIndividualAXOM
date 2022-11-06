@@ -8,16 +8,14 @@ body {
     background-repeat: no-repeat;
 }
 
-
 /* header com logo e menu */
 
 .navbar {
     display: flex;
     float: right;
-    width: 600px;
     /* border: 1px solid red; */
-    width: 50%;
-    margin-left: 50%;
+    width: 85%;
+    margin-left: 55%;
 }
 
 .header .navbar li {
@@ -71,6 +69,7 @@ p{
 }
 
 /* Fim do Header */
+
 
 /* Banner */
 

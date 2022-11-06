@@ -10,9 +10,9 @@ body {
 .navbar {
     display: flex;
     float: right;
-    /* border: 1px solid red;  */
+    /* border: 1px solid red; */
     width: 85%;
-    margin-left: 20%;
+    margin-left: 55%;
 }
 
 .header .navbar li {
@@ -30,8 +30,11 @@ a {
     color: white;
 }
 
+p{
+    text-align: center;
+}
 .container {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.671);
     justify-content: space-around;
     /* border: solid 1px yellow; */
     width: 100%;
@@ -61,6 +64,8 @@ a {
     font-weight: 700;
     color: white;
 }
+
+/* Fim do Header */
 
 .usuario .conteiner{
     background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
@@ -95,7 +100,7 @@ a {
 .banner {
     position: absolute;
     top: 50px;
-     border: 1px solid red;  
+     /* border: 1px solid red;   */
     margin-left: 220px;
     height: fit-content;
     width: 83%;
@@ -112,7 +117,7 @@ a {
     background-color: rgb(36, 36, 70);
     margin-top: 30px;
     margin-left: 20px;
-     border: 1px solid red;  
+    /* border: 1px solid red;   */
     width: 98%;
     height: fit-content;
     border-radius: 15px;
