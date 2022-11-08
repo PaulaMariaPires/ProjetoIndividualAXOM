@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-image: url(Imagens/milky-way-g29451a502_1920.jpg);
+    
 }
 
 
@@ -22,7 +25,7 @@ body {
     float: left;
     padding-left: 50px;
     font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -34,7 +37,7 @@ p{
     text-align: center;
 }
 .container {
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: rgba(0, 0, 0, 0.801);
     justify-content: space-around;
     /* border: solid 1px yellow; */
     width: 100%;
@@ -63,6 +66,7 @@ p{
     font-size: 12pt;
     font-weight: 700;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Fim do Header */
@@ -74,7 +78,7 @@ p{
     justify-content: center;
     /* border: 1px solid red; */
     width: 230px;
-    height: 960px;
+    height: 980px;
     color: white;
 }
 
@@ -100,35 +104,18 @@ p{
 }
 
 .banner {
+    background-color: rgba(0, 0, 0, 0.637);
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 15px;
-     /* border: 1px solid red;    */
-    margin-left: 220px;
+    top: 50px;
+    /* border: 1px solid red;    */
+    margin-left: 225px;
     padding: 40px 0;
-    height: 500px;
+    height: 900px;
     width: 83%;
 }
 
-.foto1 {
-    margin-top: 20px;
-    margin-left: 20px;
-    background-image: url(Imagens/smiling-ge21deea24_1920.jpg);
-    width: 50px;
-    height: 50px;
-}
-
-
-.seusposts {
-    background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
-    background-size: cover;
-    /* border: 1px red solid;  */
-    border-radius: 5px;
-    width: 80%;
-    height: 900px;
-    padding-top: 1px;
-}
 
 .avisos {
     margin-left: 100px;
@@ -136,7 +123,7 @@ p{
     height: 150px;
     /* border: 3px solid pink; */
     color: rgb(216, 216, 216);
-    font-family: "Exo 2", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -150,6 +137,7 @@ p{
 }
 
 .avisos .div-form label {
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -211,14 +199,6 @@ p{
     width: 100%;
 }
 
-.div-results .feed-container {
-    background-color: #212124;
-    border-radius: 5px;
-    /* border: 1px red solid; */
-    margin-bottom: 30px;
-    height: 400px;
-    width: 100%;
-}
 
 .div-buttons {
     display: flex;

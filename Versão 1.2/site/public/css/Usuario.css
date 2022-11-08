@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -21,7 +23,7 @@ body {
     float: left;
     padding-left: 50px;
     font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -106,7 +108,6 @@ p{
 }
 
 .alinhamento h2{
-    -webkit-text-stroke: rgb(43, 47, 71) 1px;
      color: white; 
     margin-left: 20px;
 }
@@ -260,7 +261,7 @@ p{
   
  .emcima .text {
     color: white;
-    font-size: 20px;
+    font-size: medium;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -295,9 +296,9 @@ p{
     opacity: 1;
   }
   
-  .text {
+  .embaixo .text {
     color: white;
-    font-size: 20px;
+    font-size: medium;
     position: absolute;
     top: 50%;
     left: 50%;
