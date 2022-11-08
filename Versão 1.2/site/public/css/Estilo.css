@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
     background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
 
 
 /* header com logo e menu */
@@ -20,13 +26,13 @@ body {
 }
 
 .header .navbar li {
+    font-family: 'Poppins', sans-serif;
     justify-content: space-around;
     color: white;
     display: flex;
     float: left;
     padding-left: 50px;
     font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
@@ -37,6 +43,7 @@ a {
 p{
     text-align: center;
 }
+
 .container {
     background-color: rgba(0, 0, 0, 0.671);
     justify-content: space-around;
@@ -129,25 +136,27 @@ p{
     background-image: url(Imagens/mars-g21336a0c6_1920.jpg);
     background-size: cover;
     position: absolute;
-    right: 700px; 
+    right: 750px; 
     display: flex;
     align-items: center;
     flex-direction: column;
     /* border: solid 1px red; */
-    width: 645px;
-    height: 500px;
-    margin-bottom: 40px;
+    width: 545px;
+    height: 400px;
+    margin-top: 50px;
 }
 
+
 .exploracao .texto{
+    font-size: x-large;
     position: absolute;
     right: 1px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     /* border: solid 1px red; */
     width: 690px;
-    height: 500px; 
+    height: 450px; 
 }
 
 /* Fim Banner exploração espacial */
@@ -158,6 +167,18 @@ p{
 
 .exploracoes{
     height: 510px;
+}
+
+.exploracoes p{
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+    
+}
+
+.exploracoes img{
+    width: 150px;
+    height: 150px;
 }
 .exploracoes .conteiner{ 
     text-align: center;
@@ -187,7 +208,8 @@ p{
 
 .exploracoes .gagarin{
     margin-top: 25px;
-    background-color: rgb(211, 211, 211);
+   background-image:url(Imagens/planeta.jpg);
+   background-size: cover;
     padding: 40px 0 ;
     /* border: 1px solid red; */
     width: 25%;
@@ -196,6 +218,8 @@ p{
 }
 
 .exploracoes .armstrong{
+    background-image:url(Imagens/lua.jpg);
+   background-size: cover;
     margin-top: 25px;
     background-color: rgb(211, 211, 211);
     padding: 40px 0 ;
@@ -206,6 +230,8 @@ p{
 }
 
 .exploracoes .rover{
+    background-image:url(Imagens/mars-g303f8fecb_1280.png);
+    background-size: cover;
     margin-top: 25px;
     background-color: rgb(211, 211, 211);
     padding: 40px 0 ;
@@ -218,13 +244,23 @@ p{
 /* Fim banner missões */
 
 
-/* Conteiner Explicação sobre exploração espacial */
+/* Conteiner explicação sobre exploração espacial */
+.explicacao p{
+    margin-top: 100px;
+    color: white;
+    font-size: x-large;
+}
 
+.explicacao h1{
+margin-top: 10px;
+font-size: x-large;
+}
 .explicacao{
     margin-top: 150px;
     background-color: black;
     color: white;
     /* border: 1px red solid; */
+    padding-bottom: 10px;
     width: 100%;
     height: 300px;
 }
@@ -238,15 +274,20 @@ flex-direction: column;
 
 }
 
-.conclusao .conteiner{
+.conclusao .conteiner {
     color: white;
     /* border: 1px solid red; */
     padding: 40px 0;
     height: 550px;
 }
 
-.conclusao  h1{
-margin-top: 200px;
+.conclusao .conteiner p{
+    color: white;
+    font-size: larger;
+}
+
+.conclusao h1{
+margin-top: 150px;
 }
 
 .conclusao button{
@@ -271,6 +312,10 @@ margin-top: 200px;
     background-color: rgba(0, 0, 0, 0.897);
     width: 100%;
     height: 130px;
+}
+
+.footer p{
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Fim footer */
