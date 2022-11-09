@@ -14,7 +14,7 @@
     <link rel="icon" href="./css/Imagens/logo.png">
 </head>
 
-<body>
+<body onload=" atualizarFeed()">
 
     <!-- Header com logo e menu -->
     <div class="header">
@@ -47,7 +47,7 @@
             </div>
             <div class="perfil">
                 <center>
-                    <h4 id="nome_usuario"></h4>
+                    
                     <h4><a href="PerfildoUsuario.html">Perfil</a></h4>
                 </center>
             </div>
@@ -61,7 +61,16 @@
             <!--  -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <canvas id="myChart" style="position: relative; height:40vh; width:40vw;"></canvas>
+                <!-- <canvas id="myChart" style="position: relative; height:40vh; width:40vw;"></canvas> -->
+                <div class="usuariosgerais">
+                    <h1>Aqui você poderá ver a pontução de outros usuarios!
+                    </h1>
+                    <h3>usuarios que atingiram 10 pontos:<div id="qtdP10"></div></h3>
+                    <h3>usuarios que atingiram 20 pontos:<div id="qtdP20"></div></h3>
+                    <h3>usuarios que atingiram 30 pontos:<div id="qtdP30"></div></h3>
+                    <h3>usuarios que atingiram 40 pontos:<div id="qtdP40"></div></h3>
+                    <h3>usuarios que atingiram 50 pontos:<div id="qtdP50"></div></h3>
+                </div>
             </div>
 
         </div>

@@ -1,4 +1,6 @@
 // Script para o quiz
+
+
 var pontos = 0;
 
 function escolha() {
@@ -241,18 +243,6 @@ function escolha5() {
         <div class="questionario">
         <h1>${result}</h1>
 
-        <!-- The Modal -->
-                    <div id="myModal" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>                               
-                                <canvas id="myChart" style="position: relative; height:40vh; width:40vw;"></canvas>                           
-                        </div>
-
-                    </div>
-
-        <button id="myBtn">Open Modal</button>
         </div>`
     } else if (selecao5 != "yuri") {
         if (pontos == 10) {
@@ -271,6 +261,74 @@ function escolha5() {
        <div class="questionario">
        <h1>${result}</h1>`
     }
+    alert(sessionStorage.ID_USUARIO);
+    var idUsuario = sessionStorage.ID_USUARIO;
+    fetch("/usuarios/registrarpontos", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            // crie um atributo que recebe o valor recuperado aqui
+            // Agora vá para o arquivo routes/usuario.js
+            pontosServer: pontos,
+            usuarioServer: idUsuario
+        })
+    }).then(function (resposta) {
+
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
+            
+        } else {
+            throw ("Houve um erro ao tentar realizar o cadastro!");
+        }
+    }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+    });
+
+   
+
+    return false;
 }
 
+function atualizarFeed(){
+    alert("teste");
+    fetch("/usuarios/Pontuacao").then(function (resposta) {
+        if (resposta.ok) {
+            if (resposta.status == 204) {
+                throw "Nenhum resultado encontrado!!";
+            }
+            alert("teste2");
+            resposta.json().then(function (resposta) {
+                var qtdPontos10 = resposta[0].SomaPontos;
+                var qtdPontos20 = resposta[1].SomaPontos;
+                var qtdPontos30 = resposta[2].SomaPontos;
+                var qtdPontos40 = resposta[3].SomaPontos;
+                var qtdPontos50 = resposta[4].SomaPontos;
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+                console.log("Qtd pontos 10: ", qtdPontos10);
+                console.log("Qtd pontos 20: ", qtdPontos20);
+                console.log("Qtd pontos 30: ", qtdPontos30);
+                console.log("Qtd pontos 40: ", qtdPontos40);
+                console.log("Qtd pontos 50: ", qtdPontos50);
+
+                qtdP10.innerHTML = qtdPontos10;
+                qtdP20.innerHTML = qtdPontos20;
+                qtdP30.innerHTML = qtdPontos30;
+                qtdP40.innerHTML = qtdPontos40;
+                qtdP50.innerHTML = qtdPontos50;
+
+                
+    
+              
+            });
+        } else {
+            throw ('Houve um erro na API!');
+        }
+    }).catch(function (resposta) {
+        console.error(resposta);
+    
+    });
+}
 // Fim script para quiz
