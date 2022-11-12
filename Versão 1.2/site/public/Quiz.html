@@ -61,15 +61,15 @@
             <!--  -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <!-- <canvas id="myChart" style="position: relative; height:40vh; width:40vw;"></canvas> -->
+                   <canvas id="myChart" style="position: relative; height:40vh; width:40vw;"></canvas>
                 <div class="usuariosgerais">
-                    <h1>Aqui você poderá ver a pontução de outros usuarios!
+                    <!-- <h1>Aqui você poderá ver a pontução de outros usuarios!
                     </h1>
                     <h3>usuarios que atingiram 10 pontos:<div id="qtdP10"></div></h3>
                     <h3>usuarios que atingiram 20 pontos:<div id="qtdP20"></div></h3>
                     <h3>usuarios que atingiram 30 pontos:<div id="qtdP30"></div></h3>
                     <h3>usuarios que atingiram 40 pontos:<div id="qtdP40"></div></h3>
-                    <h3>usuarios que atingiram 50 pontos:<div id="qtdP50"></div></h3>
+                    <h3>usuarios que atingiram 50 pontos:<div id="qtdP50"></div></h3> -->
                 </div>
             </div>
 
@@ -129,39 +129,7 @@
 
 <script>
 
-    //  Configuração do gráfico
-    const label = [
-        '0 pontos',
-        '10 pontos',
-        '20 pontos',
-        '30 pontos',
-        '40 pontos',
-        '50 pontos',
 
-    ];
-
-    const data = {
-        labels: label,
-        datasets: [{
-            label: 'Pontuação de usuarios globais',
-            backgroundColor: 'rgb(0, 0, 255)',
-            borderColor: 'rgb(0, 0, 255)',
-            data: [2, 12, 30, 85, 80, 83],
-        }]
-    };
-
-    const config = {
-        type: 'bar',
-        data: data,
-        options: {}
-    };
-
-    const myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-    );
-
-    // Fim script para configuração do gráfico
 
     //  Modal para o gráfico
     var modal = document.getElementById("myModal");

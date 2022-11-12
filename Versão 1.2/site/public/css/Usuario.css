@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-image: url(Imagens/milky-way-g29451a502_1920.jpg);
+    background-color: #dce0e6;
 }
 
 /* header com logo e menu */
@@ -21,7 +21,6 @@ body {
     float: left;
     padding-left: 50px;
     font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
@@ -33,7 +32,7 @@ p{
     text-align: center;
 }
 .container {
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: #1f1f20;
     justify-content: space-around;
     /* border: solid 1px yellow; */
     width: 100%;
@@ -67,7 +66,7 @@ p{
 /* Fim do Header */
 
 .usuario .conteiner{
-    background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
+    background-color: #2b4c7e;
     display: flex;
     justify-content: center;
     /* border: 1px solid red; */
@@ -114,16 +113,15 @@ p{
 .banner .conteiner{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(36, 36, 70);
-    margin-left: 20px;
-    /* border: 1px solid red;  */
+    margin-left: 20px; 
     width: 98%;
     height: 675px;
     border-radius: 15px;
 }
 
 .assunto1{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
+    border-radius: 2px;
     width: 250px;
     height: 300px;
     
@@ -136,7 +134,7 @@ p{
 
 
 .assunto2{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
     width: 250px;
     height: 300px;
     margin-left: 20px;
@@ -148,7 +146,7 @@ p{
 }
 
 .assunto3{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
     width: 250px;
     height: 300px;
     margin-left: 20px;
@@ -160,7 +158,7 @@ p{
 } 
 
 .assunto4{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
     width: 250px;
     height: 300px;
     margin-left: 20px;
@@ -172,7 +170,7 @@ p{
 } 
 
 .assunto5{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
     width: 250px;
     height: 300px;
 }
@@ -183,7 +181,7 @@ p{
 }
 
 .assunto6{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
     width: 250px;
     height: 300px;
     margin-left: 20px;
@@ -195,7 +193,7 @@ p{
 }
 
 .assunto7{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
     width: 250px;
     height: 300px;
     margin-left: 20px;
@@ -207,7 +205,7 @@ p{
 }
 
 .assunto8{
-    /* border: 1px solid red; */
+    border: 1px solid #dce0e6;
     width: 250px;
     height: 300px;
     margin-left: 20px;

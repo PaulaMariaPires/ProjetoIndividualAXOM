@@ -293,13 +293,11 @@ function escolha5() {
 }
 
 function atualizarFeed(){
-    alert("teste");
     fetch("/usuarios/Pontuacao").then(function (resposta) {
         if (resposta.ok) {
             if (resposta.status == 204) {
                 throw "Nenhum resultado encontrado!!";
             }
-            alert("teste2");
             resposta.json().then(function (resposta) {
                 var qtdPontos10 = resposta[0].SomaPontos;
                 var qtdPontos20 = resposta[1].SomaPontos;
@@ -313,15 +311,44 @@ function atualizarFeed(){
                 console.log("Qtd pontos 40: ", qtdPontos40);
                 console.log("Qtd pontos 50: ", qtdPontos50);
 
-                qtdP10.innerHTML = qtdPontos10;
-                qtdP20.innerHTML = qtdPontos20;
-                qtdP30.innerHTML = qtdPontos30;
-                qtdP40.innerHTML = qtdPontos40;
-                qtdP50.innerHTML = qtdPontos50;
+
 
                 
     
-              
+               //  Configuração do gráfico
+    const label = [
+        '10 pontos',
+        '20 pontos',
+        '30 pontos',
+        '40 pontos',
+        '50 pontos',
+
+    ];
+
+    const data = {
+        labels: label,
+        datasets: [{
+            label: 'Pontuação de usuarios globais',
+            backgroundColor: 'rgb(0, 0, 255)',
+            borderColor: 'rgb(0, 0, 255)',
+            data: [qtdPontos10, qtdPontos20, qtdPontos30, qtdPontos40, qtdPontos50],
+        }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+    };
+
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    // Fim script para configuração do gráfico
+
+
             });
         } else {
             throw ('Houve um erro na API!');
