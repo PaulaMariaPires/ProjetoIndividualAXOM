@@ -21,12 +21,7 @@
         <div class="container">
             <div class="navbar">
                 <ul>
-                    <li><a href="PaginaDoUsuario.html">Home</a></li>
-                    <li><a href="Quiz.html">Quiz</a></li>
-                    <li><a href="Lua.html">Lua</a></li>
-                    <li><a href="Marte.html">Marte</a></li>
-                    <li>|</li>
-                    <li><a href="index.html">Logout</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </div>
 
@@ -38,20 +33,21 @@
     </div>
     <!-- Fim do Header -->
 
+    
     <div class="usuario">
         <div class="conteiner">
             <div class="foto"></div>
             <div class="bemvindo">
-                <h4>Bem-vindo(a) de volta!</h4>
-
+                <h4 id="nome_usuario"></h4>
+                <h4>Bem-vindo(a)!</h4>
             </div>
             <div class="perfil">
                 <center>
-                    
-                    <h4><a href="PerfildoUsuario.html">Perfil</a></h4>
+                    <h4 id="b_usuario"></h4>
                 </center>
             </div>
-
+        </div>
+    </div>
 
         </div>
 
@@ -129,7 +125,7 @@
 
 <script>
 
-
+b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     //  Modal para o gráfico
     var modal = document.getElementById("myModal");

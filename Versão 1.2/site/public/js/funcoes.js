@@ -12,7 +12,7 @@ function validarSessao() {
         b_usuario.innerHTML = nome;
 
         // finalizarAguardar();
-    } 
+    }
 }
 
 function limparSessao() {

@@ -1,7 +1,9 @@
 // Script para o quiz
 
 
+
 var pontos = 0;
+var idUsuario = sessionStorage.ID_USUARIO
 
 function escolha() {
 
@@ -261,8 +263,10 @@ function escolha5() {
        <div class="questionario">
        <h1>${result}</h1>`
     }
+
+
     alert(sessionStorage.ID_USUARIO);
-    var idUsuario = sessionStorage.ID_USUARIO;
+    // sessionStorage.ID_USUARIO = json.id;
     fetch("/usuarios/registrarpontos", {
         method: "POST",
         headers: {
@@ -279,20 +283,20 @@ function escolha5() {
         console.log("resposta: ", resposta);
 
         if (resposta.ok) {
-            
+
         } else {
-            throw ("Houve um erro ao tentar realizar o cadastro!");
+            throw ("Houve um erro ao tentar realizar a pontuação");
         }
     }).catch(function (resposta) {
         console.log(`#ERRO: ${resposta}`);
     });
 
-   
+
 
     return false;
 }
 
-function atualizarFeed(){
+function atualizarFeed() {
     fetch("/usuarios/Pontuacao").then(function (resposta) {
         if (resposta.ok) {
             if (resposta.status == 204) {
@@ -313,40 +317,40 @@ function atualizarFeed(){
 
 
 
-                
-    
-               //  Configuração do gráfico
-    const label = [
-        '10 pontos',
-        '20 pontos',
-        '30 pontos',
-        '40 pontos',
-        '50 pontos',
 
-    ];
 
-    const data = {
-        labels: label,
-        datasets: [{
-            label: 'Pontuação de usuarios globais',
-            backgroundColor: 'rgb(0, 0, 255)',
-            borderColor: 'rgb(0, 0, 255)',
-            data: [qtdPontos10, qtdPontos20, qtdPontos30, qtdPontos40, qtdPontos50],
-        }]
-    };
+                //  Configuração do gráfico
+                const label = [
+                    '10 pontos',
+                    '20 pontos',
+                    '30 pontos',
+                    '40 pontos',
+                    '50 pontos',
 
-    const config = {
-        type: 'bar',
-        data: data,
-        options: {}
-    };
+                ];
 
-    const myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-    );
+                const data = {
+                    labels: label,
+                    datasets: [{
+                        label: 'Pontuação de usuarios globais',
+                        backgroundColor: 'rgb(0, 0, 255)',
+                        borderColor: 'rgb(0, 0, 255)',
+                        data: [qtdPontos10, qtdPontos20, qtdPontos30, qtdPontos40, qtdPontos50],
+                    }]
+                };
 
-    // Fim script para configuração do gráfico
+                const config = {
+                    type: 'bar',
+                    data: data,
+                    options: {}
+                };
+
+                const myChart = new Chart(
+                    document.getElementById('myChart'),
+                    config
+                );
+
+                // Fim script para configuração do gráfico
 
 
             });
@@ -355,7 +359,7 @@ function atualizarFeed(){
         }
     }).catch(function (resposta) {
         console.error(resposta);
-    
+
     });
 }
 // Fim script para quiz

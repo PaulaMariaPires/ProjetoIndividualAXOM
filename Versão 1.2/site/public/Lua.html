@@ -18,7 +18,7 @@
     <link rel="icon" href="./css/Imagens/logo.png">
 </head>
 
-<body>
+<body onload="validarSessao()">
 
   
     <!-- Header com logo e menu -->
@@ -27,7 +27,6 @@
             <div class="navbar">
                 <ul>
                     <li><a href="PaginaDoUsuario.html">Home</a></li>
-                    <li><a href="Quiz.html">Quiz</a></li>
                     <li><a href="Lua.html">Lua</a></li>
                     <li><a href="Marte.html">Marte</a></li>
                     <li>|</li>
@@ -50,11 +49,10 @@
             <div class="foto"></div>
             <div class="bemvindo">
                 <h4>Bem-vindo(a) de volta!</h4>
-
             </div>
             <div class="perfil">
                 <center>
-                    <h4>Jualiana Silva</h4>
+                    <h4 id="b_usuario"></h4>
                     <h4><a href="PerfildoUsuario.html">Perfil</a></h4>
                 </center>
             </div>
@@ -67,19 +65,16 @@
         
         <div class="conteiner">
 
-            <div class="emcima">
-
-                
+            <div class="emcima">          
             <div class="alinhamento">
                 <h2>Filmes:</h2>
             </div>
                 <div class="assunto1">
                     <div class="container">
-                        <img src="catologo/vida.webp" alt="">
+                        <img src="catologo/estrelas.jpg" alt="">
                         <div class="overlay">
                             <div class="text">
-                                <center>Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Tenetur dolore cumque fuga perspiciatis.</center>
+                               O astronauta Mark Watney é enviado a uma missão para Marte, mas após uma severa tempestade, ele é dado como morto, abandonado pelos colegas e acorda sozinho no planeta inóspito com escassos suprimentos e sem saber como reencontrar os companheiros ou retornar à Terra.
                             </div>
                         </div>
                     </div>
@@ -87,7 +82,7 @@
 
                 <div class="assunto2">
                     <div class="container">
-                        <img src="catologo/perdidoemmmarte.webp" alt="">
+                        <img src="catologo/Apollo13.jpg" alt="">
                         <div class="overlay">
                             <div class="text">Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Tenetur dolore cumque fuga perspiciatis. </div>
@@ -98,7 +93,7 @@
 
                 <div class="assunto4">
                     <div class="container">
-                        <img src="catologo/aliens.jpg"">
+                        <img src="catologo/OPrimeiroHomem.jpg">
                         <div class=" overlay">
                         <div class="text">Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Tenetur dolore cumque fuga perspiciatis. </div>
@@ -116,7 +111,7 @@
             </div>
             <div class="assunto5">
                 <div class="container">
-                    <img src="catologo/prometheus.jpg" alt="">
+                    <img src="catologo/missaoapollo.webp" alt="">
                     <div class="overlay">
                         <div class="text">Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Tenetur dolore cumque fuga perspiciatis. </div>
@@ -127,7 +122,7 @@
 
             <div class="assunto6">
                 <div class="container">
-                    <img src="catologo/livro2.jpg" alt="">
+                    <img src="catologo/julioverne.jpg" alt="">
                     <div class="overlay">
                         <div class="text">Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Tenetur dolore cumque fuga perspiciatis. </div>
@@ -137,7 +132,7 @@
 
             <div class="assunto7">
                 <div class="container">
-                    <img src="catologo/aliens2.jpg" alt="">
+                    <img src="catologo/omundodalua.jpg" alt="">
                     <div class="overlay">
                         <div class="text">Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Tenetur dolore cumque fuga perspiciatis. </div>
@@ -189,3 +184,8 @@
     </div>
 
     </div>
+
+    <script>
+      b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+    </script>

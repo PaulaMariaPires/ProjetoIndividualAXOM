@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-
+    background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
 }
 
 /* header com logo e menu */
@@ -21,7 +23,6 @@ body {
     float: left;
     padding-left: 50px;
     font-weight: 700;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
@@ -69,7 +70,7 @@ p{
 
 
 .usuario .conteiner{
-    background-color: #2b4c7e;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     display: flex;
     justify-content: center;
     /* border: 1px solid red; */
@@ -98,6 +99,8 @@ p{
     top: 350px;
 }
 
+
+/* Fim div usuario */
 .banner {
     position: absolute;
     top: 50px;
@@ -108,7 +111,7 @@ p{
 }
 
 .alinhamento h2{
-    -webkit-text-stroke: rgb(43, 47, 71) 1px;
+    -webkit-text-stroke: rgb(255, 255, 255) 1px;
      color: white; 
      margin-left: 10px;
 }
@@ -244,16 +247,38 @@ p{
     padding: 10px 10px 5px 10px;
 }
 
+.emcima .container {
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
 
-
-.embaixo{
+   
+  .emcima .overlay {
     position: absolute;
-    top: 640px ;
-    display: flex;
-    float: right; 
-    padding: 10px 10px 10px 10px;
-}
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0105078a;
+  }
+  
+  .emcima .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .emcima .text {
+    color: white;
+    font-size: small;
+    position: absolute;
+    padding: 3px 3px 3px 3px;
+  }
 
+/* Fim divisões emcima */
 
 .meio{
     position: absolute;
@@ -264,40 +289,6 @@ p{
 }
 
 
-.emcima .container {
-    width: 200px;
-    height: 250px;
-    position: relative;
-  }
-  
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .text {
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-  }
-
-
   .meio .container {
     width: 200px;
     height: 250px;
@@ -305,7 +296,7 @@ p{
   }
   
   
-  .overlay {
+ .meio .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -315,23 +306,31 @@ p{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #0105078a;
   }
   
-  .container:hover .overlay {
+  .meio .container:hover .overlay {
     opacity: 1;
   }
   
-  .text {
+.meio .text {
     color: white;
-    font-size: 10px;
+    font-size: small;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
+    padding: 3px 3px 3px 3px;
   }
 
   
+  /* Fim divisão meio */
+
+  .embaixo{
+    position: absolute;
+    top: 640px ;
+    display: flex;
+    float: right; 
+    padding: 10px 10px 10px 10px;
+}
+
 .embaixo .container {
     width: 200px;
     height: 250px;
@@ -339,7 +338,7 @@ p{
   }
   
   
-  .overlay {
+ .embaixo .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -349,21 +348,16 @@ p{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #0105078a;
   }
   
-  .container:hover .overlay {
+ .embaixo .container:hover .overlay {
     opacity: 1;
   }
   
-  .text {
+  .embaixo .text {
     color: white;
-    font-size: 20px;
+    font-size: small;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    padding: 3px 3px 3px 3px;
   }

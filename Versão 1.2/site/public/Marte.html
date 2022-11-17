@@ -23,7 +23,6 @@
             <div class="navbar">
                 <ul>
                     <li><a href="PaginaDoUsuario.html">Home</a></li>
-                    <li><a href="Quiz.html">Quiz</a></li>
                     <li><a href="Lua.html">Lua</a></li>
                     <li><a href="Marte.html">Marte</a></li>
                     <li>|</li>
@@ -45,12 +44,12 @@
         <div class="conteiner">
             <div class="foto"></div>
             <div class="bemvindo">
+                <h4 id="nome_usuario"></h4>
                 <h4>Bem-vindo(a) de volta!</h4>
-
             </div>
             <div class="perfil">
                 <center>
-                    <h4>Jualiana Silva</h4>
+                    <h4 id="b_usuario"></h4>
                     <h4><a href="PerfildoUsuario.html">Perfil</a></h4>
                 </center>
             </div>
@@ -74,8 +73,8 @@
                         <img src="catologo/vida.webp" alt="">
                         <div class="overlay">
                             <div class="text">
-                                <center>Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Tenetur dolore cumque fuga perspiciatis.</center>
+                               Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Tenetur dolore cumque fuga perspiciatis.
                             </div>
                         </div>
                     </div>
@@ -85,12 +84,12 @@
                     <div class="container">
                         <img src="catologo/perdidoemmmarte.webp" alt="">
                         <div class="overlay">
-                            <div class="text">Filme:Perdido em Marte<br>Sinopse - Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Tenetur dolore cumque fuga perspiciatis. </div>
-                        </div>
+                            <div class="text">
+                                O astronauta Mark Watney é enviado a uma missão para Marte, mas após uma severa tempestade, ele é dado como morto, abandonado pelos colegas e acorda sozinho no planeta inóspito com escassos suprimentos e sem saber como reencontrar os companheiros ou retornar à Terra.
+                             </div>
                     </div>
                 </div>
-
+                </div>
 
                 <div class="assunto4">
                     <div class="container">
@@ -216,3 +215,11 @@
     </div>
 
     </div>
+
+</body>
+</html>
+
+<script>
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+  </script>

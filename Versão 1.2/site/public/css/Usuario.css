@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #dce0e6;
+   background-image: url(Imagens/science-fiction-gb2b40052a_1920.jpg);
+
 }
 
 /* header com logo e menu */
@@ -66,7 +69,7 @@ p{
 /* Fim do Header */
 
 .usuario .conteiner{
-    background-color: #2b4c7e;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     display: flex;
     justify-content: center;
     /* border: 1px solid red; */
@@ -95,6 +98,7 @@ p{
     top: 350px;
 }
 
+/* Fim div usuario */
 .banner {
     position: absolute;
     top: 50px;
@@ -105,7 +109,7 @@ p{
 }
 
 .alinhamento h2{
-    -webkit-text-stroke: rgb(43, 47, 71) 1px;
+    -webkit-text-stroke: rgb(255, 255, 255) 1px;
      color: white; 
     margin-left: 20px;
 }
@@ -258,14 +262,9 @@ p{
   
  .emcima .text {
     color: white;
-    font-size: 20px;
+    font-size: medium;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
+    padding: 3px 3px 3px 3px;
   }
 
   
@@ -295,12 +294,7 @@ p{
   
   .text {
     color: white;
-    font-size: 20px;
+    font-size: medium;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    padding: 3px 3px 3px 3px;
   }
