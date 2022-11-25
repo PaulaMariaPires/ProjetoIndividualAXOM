@@ -14,7 +14,7 @@ body {
     float: right;
     /* border: 1px solid red; */
     width: 85%;
-    margin-left: 55%;
+    margin-left: 85%;
 }
 
 .header .navbar li {
@@ -253,7 +253,7 @@ p {
 #myBtn {
     position: absolute;
     bottom: 200px;
-    left: 65px;
+    left: 55px;
 }
 
 /* Fim modal */

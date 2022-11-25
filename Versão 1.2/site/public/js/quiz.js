@@ -1,7 +1,5 @@
 // Script para o quiz
 
-
-
 var pontos = 0;
 var idUsuario = sessionStorage.ID_USUARIO
 
@@ -14,10 +12,10 @@ function escolha() {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o nome do robô na imagem abaixo?</h1>
+            <h2>Qual o nome do robô na imagem abaixo?</h2>
                 <div class="questao">
                     <div class="imagem">
-                        <img src="Imagens/mars-g21336a0c6_1920.jpg" alt="constelação">
+                        <img src="Imagens/mars-g21336a0c6_1920.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -37,10 +35,10 @@ function escolha() {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o nome do robô na imagem abaixo?</h1>
+        <h2>Qual o nome do robô na imagem abaixo?</h2>
                 <div class="questao">
                     <div class="imagem">
-                        <img src="Imagens/mars-g21336a0c6_1920.jpg" alt="constelação">
+                        <img src="Imagens/mars-g21336a0c6_1920.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -53,7 +51,7 @@ function escolha() {
             <option value="hori">Horizon</option>
         </select>
 
-        <button onclick="escolha2()">Ver Resposta</button>
+        <button onclick="escolha2()">Próximo</button>
     </div>
     </div>`
 
@@ -69,10 +67,10 @@ function escolha2() {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o nome do foguete lançado pela SpaceX em 2016?</h1>
+            <h2>Qual o nome do foguete lançado pela SpaceX em 2016?</h2>
                 <div class="questao">
                     <div class="imagem">
-                    <img src="Imagens/fh.webp" alt="constelação">
+                    <img src="Imagens/fh.webp" alt="">
                 </div>
                 </div>
             </div>
@@ -85,16 +83,16 @@ function escolha2() {
                 <option value="origin">Origin</option>
             </select>
 
-            <button onclick="escolha3()">Ver Resposta</button>
+            <button onclick="escolha3()">Próximo</button>
         </div>`
     } else if (selecaoDois != "rover") {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o nome do foguete lançado pela SpaceX em 2016?</h1>
+        <h2>Qual o nome do foguete lançado pela SpaceX em 2016?</h2>
                 <div class="questao">
                     <div class="imagem">
-                    <img src="Imagens/fh.webp" alt="constelação">
+                    <img src="Imagens/fh.webp" alt="">
                 </div>
                 </div>
             </div>
@@ -107,7 +105,7 @@ function escolha2() {
                 <option value="origin">Origin</option>
             </select>
 
-            <button onclick="escolha3()">Ver Resposta</button>
+            <button onclick="escolha3()">Próximo</button>
         </div>`
 
     }
@@ -122,10 +120,10 @@ function escolha3() {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o ano que foi feito a primeria fotografia de um buraco negro?</h1>
+            <h2>Qual o ano que foi feito a primeria fotografia de um buraco negro?</h2>
         <div class="questao">
         <div class="imagem">
-            <img src="Imagens/bn.jpg" alt="constelação">
+            <img src="Imagens/bn.jpg" alt="">
         </div>
         </div>
         </div>
@@ -137,17 +135,17 @@ function escolha3() {
                 <option value="2020">2020</option>
                 <option value="2022">2022</option>
             </select>
-            <button onclick="escolha4()">Ver Resposta</button>
+            <button onclick="escolha4()">Próximo</button>
         </div>`
     }
     else if (selecao3 != 'falconh') {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o ano que foi feito a primeria fotografia de um buraco negro?</h1>
+        <h2>Qual o ano que foi feito a primeria fotografia de um buraco negro?</h2>
         <div class="questao">
         <div class="imagem">
-        <img src="Imagens/bn.jpg" alt="constelação">
+        <img src="Imagens/bn.jpg" alt="">
         </div>
         </div>
         </div>
@@ -160,7 +158,7 @@ function escolha3() {
                 <option value="2022">2022</option>
             </select>
 
-            <button onclick="escolha4()">Ver Resposta</button>
+            <button onclick="escolha4()">Próximo</button>
         </div>`
     }
 }
@@ -176,10 +174,10 @@ function escolha4() {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o nome do foguete lançado pela SpaceX em 2016?</h1>
+            <h2>Qual o nome do primeiro homem a ir ao espaço?</h2>
                 <div class="questao">
                     <div class="imagem">
-                    <img src="Imagens/fh.webp" alt="constelação">
+                    <img src="Imagens/fh.webp" alt="">
                 </div>
                 </div>
             </div>
@@ -191,16 +189,16 @@ function escolha4() {
                 <option value="yuri">Yuri Gagarin</option>
                 <option value="harry">Harry Olsen</option>
             </select>
-            <button onclick="escolha5()">Ver Resposta</button>
+            <button onclick="escolha5()">Próximo</button>
         </div>`
     } else if (selecao4 != '2019') {
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
-            <h1>Qual o nome do foguete lançado pela SpaceX em 2016?</h1>
+        <h2>Qual o nome do primeiro homem a ir ao espaço?</h2>
                 <div class="questao">
                     <div class="imagem">
-                    <img src="Imagens/fh.webp" alt="constelação">
+                    <img src="Imagens/astronauta.jpg" alt="">
                 </div>
                 </div>
             </div>
@@ -212,7 +210,7 @@ function escolha4() {
                 <option value="yuri">Yuri Gagarin</option>
                 <option value="harry">Harry Olsen</option>
             </select>
-            <button onclick="escolha5()">Ver Resposta</button>
+            <button onclick="escolha5()">Próximo</button>
         </div>`
 
     }
@@ -229,34 +227,39 @@ function escolha5() {
 
         var result = "";
 
-        if (pontos == 10) {
-            result = '<center>Voce acertou 1/5 perguntas, prescisa melhorar!, <br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+        if (pontos == 0) {
+            result = '<center>Voce acertou 0/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+        } else if (pontos == 10) {
+            result = '<center>Voce acertou 1/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+
         } else if (pontos == 20) {
-            result = '<center>Voce acertou 2/5 perguntas, prescisa melhorar!, <br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 2/5 perguntas, prescisa melhorar!, <br><br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 30) {
-            result = '<center>Voce acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação, <br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 40) {
-            result = '<center>Voce acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, <br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else {
-            result = '<center>Voce acertou 5/5 perguntas, já pode se considerar membro da frota estelar!, entre no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 5/5 perguntas, já pode se considerar membro da frota estelar!,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         }
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
         <div class="questionario">
         <h1>${result}</h1>
-
         </div>`
     } else if (selecao5 != "yuri") {
-        if (pontos == 10) {
-            result = '<center>Voce acertou 1/5 perguntas, prescisa melhorar!, <br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+
+        if (pontos == 0) {
+            result = '<center>Voce acertou 0/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+        } else if (pontos == 10) {
+            result = '<center>Voce acertou 1/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 20) {
-            result = '<center>Voce acertou 2/5 perguntas, prescisa melhorar!, <br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 2/5 perguntas, prescisa melhorar!,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 30) {
-            result = '<center>Voce acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação, <br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 40) {
-            result = '<center>Voce acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, br>entre no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center></center>'
         } else {
-            result = '<center>Voce acertou 5/5 perguntas, já pode se considerar membro da frota estelar!, <br>entre no nosso site<br> e se torne um tripulante da Interprise!</center>'
+            result = '<center>Voce acertou 5/5 perguntas, já pode se considerar membro da frota estelar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center></center>'
         }
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
@@ -265,7 +268,7 @@ function escolha5() {
     }
 
 
-    alert(sessionStorage.ID_USUARIO);
+   
     // sessionStorage.ID_USUARIO = json.id;
     fetch("/usuarios/registrarpontos", {
         method: "POST",
@@ -332,7 +335,7 @@ function atualizarFeed() {
                 const data = {
                     labels: label,
                     datasets: [{
-                        label: 'Pontuação de usuarios globais',
+                        label: 'Pontuação de usuarios globais: veja aqui a pontuação de outros usuarios que também fizeram o quiz!',
                         backgroundColor: 'rgb(0, 0, 255)',
                         borderColor: 'rgb(0, 0, 255)',
                         data: [qtdPontos10, qtdPontos20, qtdPontos30, qtdPontos40, qtdPontos50],

@@ -101,7 +101,7 @@ function registrarpontos(req, res) {
 
     // Faça as validações dos valores
     if (pontos == undefined) {
-        res.status(400).send("Seu nome está undefined!");
+        res.status(400).send("Seu ponto está undefined!");
 
     } else {
         

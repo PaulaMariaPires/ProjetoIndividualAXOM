@@ -223,6 +223,7 @@ p{
    background-size: cover;
     margin-top: 25px;
     background-color: rgb(211, 211, 211);
+    -webkit-text-stroke: rgb(252, 1, 1);
     padding: 40px 0 ;
     /* border: 1px solid red; */
     width: 25%;
