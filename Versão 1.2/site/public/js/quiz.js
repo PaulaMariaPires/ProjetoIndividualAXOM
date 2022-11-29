@@ -177,7 +177,7 @@ function escolha4() {
             <h2>Qual o nome do primeiro homem a ir ao espaço?</h2>
                 <div class="questao">
                     <div class="imagem">
-                    <img src="Imagens/fh.webp" alt="">
+                    <img src="Imagens/astronauta.jpg" alt="">
                 </div>
                 </div>
             </div>
@@ -228,18 +228,18 @@ function escolha5() {
         var result = "";
 
         if (pontos == 0) {
-            result = '<center>Voce acertou 0/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 0/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 10) {
-            result = '<center>Voce acertou 1/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 1/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
 
         } else if (pontos == 20) {
-            result = '<center>Voce acertou 2/5 perguntas, prescisa melhorar!, <br><br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 2/5 perguntas, prescisa melhorar!, <br><br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 30) {
-            result = '<center>Voce acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 40) {
-            result = '<center>Voce acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else {
-            result = '<center>Voce acertou 5/5 perguntas, já pode se considerar membro da frota estelar!,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 5/5 perguntas, já pode se considerar membro da frota estelar!,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         }
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
@@ -249,17 +249,17 @@ function escolha5() {
     } else if (selecao5 != "yuri") {
 
         if (pontos == 0) {
-            result = '<center>Voce acertou 0/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 0/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 10) {
-            result = '<center>Voce acertou 1/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 1/5 perguntas, prescisa melhorar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 20) {
-            result = '<center>Voce acertou 2/5 perguntas, prescisa melhorar!,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 2/5 perguntas, prescisa melhorar!,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 30) {
-            result = '<center>Voce acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
+            result = '<center>Você acertou 3/5 perguntas, prescisa melhorar se quiser fazer parte da tripulação,<br>faça o login  no nosso site e se torne um tripulante da Interprise!</center>'
         } else if (pontos == 40) {
-            result = '<center>Voce acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center></center>'
+            result = '<center>Você acertou 4/5 perguntas, muito bom! já pode se candidatar a membro da frota!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center></center>'
         } else {
-            result = '<center>Voce acertou 5/5 perguntas, já pode se considerar membro da frota estelar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center></center>'
+            result = '<center>Você acertou 5/5 perguntas, já pode se considerar membro da frota estelar!, <br>faça o login  no nosso site e se torne um tripulante da Interprise!</center></center>'
         }
         conteiner.style.display = "block";
         conteiner.innerHTML = `        
