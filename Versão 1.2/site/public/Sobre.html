@@ -74,11 +74,13 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="Imagens/IMG-20221128-WA0009.jpg" style="width:100%">    
+                    <img src="Imagens/IMG-20221128-WA0009.jpg" style="width:100%">
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div style="text-align:center">
+                    <span class="botao" onclick="currentSlide(1)"></span>
+                    <span class="botao" onclick="currentSlide(2)"></span>
+                </div>
 
             </div>
             <br>
@@ -115,34 +117,74 @@
             </h2>
         </center>
     </div>
+
+
 </body>
 
 </html>
 
 <script>
-    let slideIndex = 1;
+    // 1 - Criando a variavel
+    // 2 - Criando a função para mostrar as imagens 
+    // 3 - Criando a função para passar a imagem para a direita 
+    // 4 - Criando a função para passar a imagen para a esquerda  
+    // 5 - Vetor que recebe as fotos do carrosel
+    // 6 - Vetor que recebe os valores dos bototes (1)
+    // 7 - Se a variavel for maior que a largura do vetor, ele reinicia a varivel 
+    // para que ela seje 1 denovo e volte para a primeria imagem
+    // 8 - Se a varivel for menor que um (siginifica que voltou para a primeira imagem manualmente)
+    // volta para a primeira imagem 
+    // 9 - Quando a proxima imagem vier, a anterior ficará invisivel
+    // 10 - Troca de imagens pelos botoes pela largura do vetor do botao
+    // 11 - Troca de display para aparecer as imagens e ativação do botao para a troca das imagens 
+
+    // 1
+    var slideIndex = 1;
+
+    // 2
     showSlides(slideIndex);
 
+    // 3
     function plusSlides(n) {
         showSlides(slideIndex += n);
     }
 
+    // 4
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
 
     function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+
+        var cont;
+
+        // 5
+        var slides = document.getElementsByClassName("mySlides");
+
+        // 6
+        var dots = document.getElementsByClassName("dot");
+
+        // 7
+        if (n > slides.length) {
+            slideIndex = 1
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+
+        // 8
+        if (n < 1) {
+            slideIndex = slides.length
         }
+
+        // 9
+        for (cont = 0; cont < slides.length; cont++) {
+            slides[cont].style.display = "none";
+        }
+
+        //10
+        for (cont = 0; cont < dots.length; cont++) {
+            dots[cont].className = dots[cont].className.replace("active", "");
+        }
+
+        // 11
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }

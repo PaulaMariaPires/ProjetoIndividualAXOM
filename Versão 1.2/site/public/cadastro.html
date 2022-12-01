@@ -117,6 +117,14 @@
             finalizarAguardar();
             return false;
         }
+        
+        if(nomeVar == Number(nomeVar)){
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "Insira um nome válido!";
+
+            finalizarAguardar();
+            return false;
+        }
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
